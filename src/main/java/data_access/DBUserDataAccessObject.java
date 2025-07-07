@@ -156,4 +156,11 @@ public class DBUserDataAccessObject implements SignupUserDataAccessInterface,
             throw new RuntimeException(ex);
         }
     }
+
+    @Override
+    public String getCurrentUser() {
+        // Not implemented for DB-based DAO
+        return null;
+    }
+
 }
